@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navbar {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.login-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.featured-food {
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+.featured-food h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.category-row {
+    margin-bottom: 40px;
+}
+
+.category-row h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dog-section, .cat-section {
+    border: 2px solid #e67e22;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fffaf2;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.see-more {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.see-more a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.see-more a:hover {
+    text-decoration: underline;
+}
+
+.our-aim {
+    background-color: #fef5e7;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.aim-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.our-aim h2 {
+    font-size: 2em;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.our-aim p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-link {
+    margin-top: 10px;
+}
+
+.footer-link a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
