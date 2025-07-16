@@ -1,5 +1,5 @@
  body{
-     font-family: Poppins, sans-serif;
+     font-family: Arial, sans-serif;
      font-size: 14px;
      margin: 0;
      padding:0;
@@ -19,6 +19,10 @@
     padding: 15px 30px;
 }
 
+.logo img{
+     width: 300px;
+}
+
 nav{
      display:flex;
      align-items:center;
@@ -30,20 +34,25 @@ nav{
 nav a{
      text-decoration: none;
      color:black;
-     margin:20px;
+     font-size: 18px;
+     font-weight: bold;
 }
 
 .nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  gap: 30px;
 }
 
 .nav-item {
   display: flex wrap;
   flex-direction: column;
   justify-self: center;
+}
+
+.nav-right{
+     display:flex;
+     align-items: center;
+     gap:20px;
 }
 
 
@@ -67,6 +76,11 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
 }
 
 h1{
@@ -173,9 +187,13 @@ h6{
      border-radius:5px;
 }
 
-.search-bar{
-     width:100px;
+.search-box{
+     padding: 8px 12px;
+     border: none;
+     border-radius: 5px;
+     width: 200px;
 }
+
 
 .cart-button{
       margin:5px 0 15px;
