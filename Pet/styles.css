@@ -8,16 +8,14 @@
      
 }
 
-
-
-.navbar {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: orange;
-    padding: 15px 30px;
+header{
+     background-color:orange;
+     padding: 10px 20px;
+     display:flex;
+     justify-content: space-between;
+     
 }
+
 
 nav{
      display:flex;
