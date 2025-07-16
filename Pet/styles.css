@@ -181,21 +181,6 @@ h6{
       border-radius:5px;
 }
 
-.cart-icon{
-     width:32px;
-     height:32px;
-     margin-left:0.5px;
-     vertical-align:middle;
-     cursor: pointer;
-     transition: all 0.3s ease;
-
-}
-
-.cart-icon:hover{
-  transform: scale(1.3);         
-}
-
-
 .profile-link{
      text-decoration:none;
 }
