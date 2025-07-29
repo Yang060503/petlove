@@ -57,6 +57,14 @@
             text-align: center;
             margin-top: 20px;
         }
+        /* Style for success message */
+        .success-message {
+            color: green;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -85,10 +93,11 @@
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            <div id="passwordError" class="error-message">Password must be at least 6 characters</div>
+            <div id="passwordError" class="error-message">Password must be 8-16 characters</div>
         </div>
         <button type="submit" class="login-btn">Login</button>
     </form>
+    <div id="successMessage" class="success-message">Login successful! Redirecting...</div>
 </div>
 
 <footer>
@@ -108,6 +117,7 @@
         const password = document.getElementById('password').value;
         const emailError = document.getElementById('emailError');
         const passwordError = document.getElementById('passwordError');
+        const successMessage = document.getElementById('successMessage');
 
         let isValid = true;
 
@@ -121,7 +131,7 @@
         }
 
         // Password validation
-        if (password.length < 6) {
+        if (password.length < 8 || password.length > 16) {
             passwordError.style.display = 'block';
             isValid = false;
         } else {
@@ -129,9 +139,16 @@
         }
 
         if (isValid) {
-            // Here you would typically send the data to your server
-            alert('Login successful!');
-            // window.location.href = 'main.html'; // Redirect after successful login
+            // Show success message
+            successMessage.style.display = 'block';
+
+            // Hide the form
+            document.getElementById('loginForm').style.display = 'none';
+
+            // Redirect after 2 seconds (2000 milliseconds)
+            setTimeout(function() {
+                window.location.href = 'main.html';
+            }, 2000);
         }
     });
 </script>
